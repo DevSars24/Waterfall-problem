@@ -4,7 +4,7 @@
 **Feature:** Interactive Waterfall Timeline — Hover Tooltips + Time-Axis Ruler
 **Date:** July 4, 2026
 **Branch:** `feature/waterfall-view-phase2`
-**Status:** ✅ Implemented, Manually Verified, Ready for PR — **Final Phase of this Feature (No Phase 3 planned)**
+**Status:** ✅ Implemented, Manually Verified, Ready for PR — 
 
 ---
 
@@ -225,7 +225,7 @@ The final rendered waterfall — ruler ticks scaled correctly to the 4076ms
 total duration, and the hover tooltip showing exact start offset, duration,
 and status for the `jsonplaceholder.typicode.com/posts` call:
 
-![Waterfall Phase 2 verification screenshot](https://raw.githubusercontent.com/DevSars24/Debugprobe-blueprint-journey/main/Screenshot%202026-07-04%20180602.png)
+![Waterfall Phase 2 verification screenshot](./images/waterfall_phase2_verification.png)
 
 **Confirmed working:**
 - ✅ Time-axis ruler: `0 ms → 1019 ms → 2038 ms → 3057 ms → 4076 ms`
@@ -251,6 +251,8 @@ flowchart LR
 Two independent safety nets — server-side encoding *and* client-side escaping —
 mean a single missed edge case doesn't turn into an XSS or data-leak issue.
 
+---
+
 ```mermaid
 flowchart LR
     P1["Phase 1\nStatic bars"] --> P2["Phase 2\nRuler + Tooltips"]
@@ -259,6 +261,10 @@ flowchart LR
     style P1 fill:#3a3a3a,color:#aaa
     style P2 fill:#245a8d,color:#fff
     style Done fill:#144d2e,color:#fff
+```
+
+---
+
 
 ---
 
